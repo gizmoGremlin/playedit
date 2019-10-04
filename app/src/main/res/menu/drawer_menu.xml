@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_item_popular"
+            android:icon="@drawable/ic_popular_black_24dp"
+            android:title="Popular"
+            />
+        <item
+            android:id="@+id/drawer_item_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search"
+            />
+        <item
+            android:id="@+id/drawer_item_profile"
+            android:icon="@drawable/ic_profile_black_24dp"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/drawer_item_want_to_playlist"
+            android:icon="@drawable/ic_want_list_black_24dp"
+            android:title="WantList"
+            />
+
+    </group>
+
+</menu>

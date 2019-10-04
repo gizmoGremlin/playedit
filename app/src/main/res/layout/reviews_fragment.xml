@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ui.ReviewsFragment">
+
+
+    <ImageView
+        android:id="@+id/img_x_add_review"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_static_iplayed_add_review"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_review_one"
+        android:layout_width="40dp"
+        android:background="@drawable/ic_close_white_24dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/txt_static_iplayed_add_review"
+        android:text="I Played..."
+        android:textSize="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_review_one"
+        app:layout_constraintRight_toRightOf="@+id/img_checkmark_add_review"
+        app:layout_constraintLeft_toRightOf="@id/img_x_add_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_checkmark_add_review"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_review_one"
+        app:layout_constraintLeft_toRightOf="@+id/txt_static_iplayed_add_review"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_check_white_24dp"/>
+
+    <View
+        android:id="@+id/divider_add_review_one"
+        app:layout_constraintTop_toBottomOf="@+id/txt_static_iplayed_add_review"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/txt_title_add_review"
+        app:layout_constraintTop_toBottomOf="@id/divider_add_review_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txt_release_year_add_review"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_review_one"
+        app:layout_constraintLeft_toRightOf="@id/txt_title_add_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_cover_add_review"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_add_review_one"
+        app:layout_constraintBottom_toTopOf="@+id/divider_add_review_two"
+        android:layout_width="60dp"
+        android:layout_height="80dp" />
+    <View
+        android:id="@+id/divider_add_review_two"
+        app:layout_constraintTop_toBottomOf="@+id/img_cover_add_review"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/edit_text_add_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="add review..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="@color/snow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_add_review_two" />
+
+    <View
+        android:id="@+id/divider_add_review_three"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_add_review"
+        app:layout_constraintBottom_toTopOf="@id/rating_bar_add_review"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+<RatingBar
+    android:id="@+id/rating_bar_add_review"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:numStars="5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
